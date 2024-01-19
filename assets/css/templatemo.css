@@ -135,6 +135,27 @@ body, ul, li, p, a, label, input, div {
   height: 6px;
 }
 
+.banners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.banners img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .banners {
+    flex-direction: row;
+  }
+  
+  .banners img {
+    width: 50%;
+  }
+}
+
 @media (min-width: 576px) {
   .tempaltemo-carousel .h1 { font-size: 1em !important;}
 }
